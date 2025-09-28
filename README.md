@@ -6,7 +6,7 @@ Simulador de delivery por drones!
 
 ### Passo 1
 
-Instalação do Se você não tem o mySQL instalado na sua máquina, você deve seguir os passos a seguir. Se voc~E já tem essa ferramenta, pule para o passo X.
+Se você não tem o mySQL instalado na sua máquina, você deve seguir os passos a seguir. Se você já tem essa ferramenta, pule para o passo 2.
 
 #### 1.1 Instalar o mySQL installer:
 
