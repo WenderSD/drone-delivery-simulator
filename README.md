@@ -79,8 +79,6 @@ Agora vem a configuração do servidor MySQL:
 - Clique Execute e aguarde concluir todos os passos.
 - Clique em Finish.
 
-Passo 2 - Após clonar o reposítório para sua máquina, abra a pasta principal na sua IDE.
-
 ##### g) Connect to Server
 
 - Insira a senha que você definiu
@@ -92,7 +90,7 @@ Pronto! Seu servidor estará pronto para o projeto.
 
 ### Passo 2
 
-Para adaptar as variáveis de ambiente do banco de dados à sua máquina, escreva o seguinte comando no terminal da pasta /server:
+Depois de ter o mySQL instalado. Clone o repositório do projeto e escreva o seguinte comando no terminal da pasta /server para adaptar as variáveis de ambiente do banco de dados à sua máquina:
 
 Para Linux / macOS / Windows Powershell:
 
