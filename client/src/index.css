@@ -149,7 +149,8 @@ priority span {
   padding-top: 15px;
 }
 
-.simulateContainer button {
+.simulateContainer button,
+.delete {
   width: 150px;
   margin: auto;
   background: #1976d2;
@@ -162,8 +163,17 @@ priority span {
   transition: background 0.2s;
 }
 
+.delete {
+  padding: 2px 0;
+  width: 60px;
+}
+
 .simulateContainer button:hover {
   background: #125ea2;
+}
+
+.delete:hover {
+  background: rgb(206, 0, 0);
 }
 
 h3 {

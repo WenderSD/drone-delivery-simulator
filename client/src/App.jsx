@@ -62,7 +62,12 @@ export default function App() {
                     <td>{o.priority}</td>
                     <td>{o.status || "pending"}</td>
                     <td>
-                      <button onClick={() => handleDelete(o.id)}>Delete</button>
+                      <button
+                        className="delete"
+                        onClick={() => handleDelete(o.id)}
+                      >
+                        Delete
+                      </button>
                     </td>
                   </tr>
                 ))}
