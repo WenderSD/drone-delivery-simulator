@@ -158,6 +158,25 @@ A cada pedido que for digitado, clique em "Create Order" e ele irá para a tabel
 
 Após criar alguns pedidos, clique no botão "Simulate Deliveries" para simular as entregas. Então você verá todas as entregas feitas por cada drone no mapa.
 
+### Sobre a lógica do projeto
+
+Lógica de alocação drones <-> pedidos:
+
+1.  Ordena pedidos por prioridade (high, medium, low) e depois por criação.
+2.  Para cada drone (ordenados por capacidade decrescente), monta rotas "viagem" agrupando pedidos. O pedido é válido enquanto o peso total <= capacidade e rota estimada <= autonomia.
+
+3.  Rota estimada: baseada em distância euclidiana para calcular a distância da rota
+
+4.  Drones iniciam na base (0,0) visitando os pontos selecionados e então retornam à base.
+
+Drones disponíveis:
+
+No projeto existem três drones com diferentes características:
+
+- Drone 1: capacidade de 12kg e autonomia de 50 Km;
+- Drone 2: capacidade de 10kg e autonomia de 80 Km;
+- Drone 3: capacidade de 7kg e autonomia de 60 Km;
+
 ## Desenvolvimento com IAs
 
 O projeto foi desenvolvido, em sua maioria com o auxílio de IAs. Assim, tudo pôde ser criado e otimizado com muito mais eficiência e velocidade, mantendo a qualidade!
@@ -228,26 +247,17 @@ Crie para mim a estrutura e os arquivos para um front-end com react que sirva co
 
 Após criada essa base, a maior parte dos ajustes feitos com o GitHub Copilot foi para criar um mapa bem legível e compreensível com todas as informações necessárias. O resto das criações, implementações e correções foram mais intervenções diretas minhas sobre o código, como na organização e estilização dos componentes na página e como seriam mostrados os pedidos.
 
-### Sobre a lógica do projeto
-
-Lógica de alocação drones <-> pedidos:
-
-1.  Ordena pedidos por prioridade (high, medium, low) e depois por criação.
-2.  Para cada drone (ordenados por capacidade decrescente), monta rotas "viagem" agrupando pedidos. O pedido é válido enquanto o peso total <= capacidade e rota estimada <= autonomia.
-
-3.  Rota estimada: baseada em distância euclidiana para calcular a distância da rota
-
-4.  Drones iniciam na base (0,0) visitando os pontos selecionados e então retornam à base.
-
-Drones disponíveis:
-
-No projeto existem três drones com diferentes características:
-
-- Drone 1: capacidade de 12kg e autonomia de 50 Km;
-- Drone 2: capacidade de 10kg e autonomia de 80 Km;
-- Drone 3: capacidade de 7kg e autonomia de 60 Km;
-
 ## Imagens do projeto
+
+### Dashboard:
+
+Link de demonstração de simulação: https://drive.google.com/file/d/1DSGkByZ9VMRtMhfUNgSHw4KjMdPFzTto/view?usp=sharing
+
+![Imagem da aplicação](imgs/delivery-drones-1.png)
+
+### Mapa de entregas:
+
+<img src="imgs/delivery-map-1.png" height="400">
 
 ## Licença
 
